@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBAD SUPERMARKET</title>
-</head>
-<body>
-</body>
-</html>
-   <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBAD SUPERMARKET</title>
+
+<style>
 :root{
   --bg:#f6f8fc;
   --card:#fff;
@@ -19,28 +16,35 @@
   --line:#e7eaf0;
   --green:#20b15a;
 }
+
 *{
   box-sizing:border-box;
   margin:0;
   padding:0;
 }
+
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:var(--bg);
   color:var(--text);
 }
+
 a{
   text-decoration:none;
   color:inherit;
 }
-button,input{
+
+button,input,select,textarea{
   font:inherit;
 }
+
 button{
   cursor:pointer;
   border:0;
 }
+
 /* TOP BAR */
+
 .topbar{
   background:#111827;
   color:#fff;
@@ -50,7 +54,9 @@ button{
   justify-content:space-between;
   gap:15px;
 }
+
 /* HEADER */
+
 header{
   background:#fff;
   position:sticky;
@@ -58,30 +64,35 @@ header{
   z-index:1000;
   box-shadow:0 2px 15px rgba(20,30,50,.08);
 }
+
 .header-main{
   padding:16px 5%;
   display:flex;
   align-items:center;
   gap:25px;
 }
+
 .logo{
   font-size:24px;
   font-weight:900;
   white-space:nowrap;
   color:var(--primary);
 }
+
 .logo small{
   display:block;
   font-size:10px;
   color:#7b8495;
   letter-spacing:2px;
 }
+
 .search-wrap{
   flex:1;
   display:flex;
   max-width:760px;
   position:relative;
 }
+
 .search-wrap input{
   width:100%;
   padding:14px 18px;
@@ -91,6 +102,7 @@ header{
   outline:0;
   background:#fff;
 }
+
 .search-btn{
   background:var(--primary);
   color:#fff;
@@ -98,11 +110,13 @@ header{
   border-radius:0 10px 10px 0;
   font-weight:bold;
 }
+
 .header-actions{
   display:flex;
   align-items:center;
   gap:10px;
 }
+
 .action-btn{
   background:#fff;
   border:1px solid var(--line);
@@ -111,6 +125,7 @@ header{
   color:var(--text);
   font-weight:bold;
 }
+
 .cart-count{
   display:inline-flex;
   min-width:21px;
@@ -123,7 +138,9 @@ header{
   font-size:12px;
   margin-left:4px;
 }
+
 /* NAV */
+
 .navbar{
   border-top:1px solid var(--line);
   padding:0 5%;
@@ -132,15 +149,18 @@ header{
   gap:4px;
   background:#fff;
 }
+
 .nav-item{
   position:relative;
   padding:14px 16px;
   font-weight:bold;
   font-size:14px;
 }
+
 .nav-item:hover{
   color:var(--primary);
 }
+
 .dropdown{
   position:absolute;
   left:0;
@@ -154,9 +174,11 @@ header{
   padding:10px;
   z-index:2000;
 }
+
 .nav-item:hover .dropdown{
   display:block;
 }
+
 .dropdown button{
   width:100%;
   text-align:left;
@@ -165,11 +187,14 @@ header{
   border-radius:8px;
   color:var(--text);
 }
+
 .dropdown button:hover{
   background:#fff1ed;
   color:var(--primary);
 }
+
 /* HERO */
+
 .hero{
   margin:20px 5%;
   border-radius:20px;
@@ -180,9 +205,11 @@ header{
   grid-template-columns:1.3fr .7fr;
   min-height:300px;
 }
+
 .hero-copy{
   padding:48px;
 }
+
 .hero-copy .tag{
   display:inline-block;
   background:rgba(255,255,255,.15);
@@ -191,17 +218,20 @@ header{
   margin-bottom:18px;
   font-size:13px;
 }
+
 .hero h1{
   font-size:46px;
   line-height:1.05;
   margin-bottom:15px;
 }
+
 .hero p{
   font-size:17px;
   opacity:.9;
   max-width:620px;
   margin-bottom:25px;
 }
+
 .hero-btn{
   background:#fff;
   color:#e83f23;
@@ -209,35 +239,44 @@ header{
   border-radius:10px;
   font-weight:800;
 }
+
 .hero-art{
   display:flex;
   align-items:center;
   justify-content:center;
   font-size:125px;
 }
+
 /* SECTION */
+
 .section{
   padding:25px 5%;
 }
+
 .section-title{
   display:flex;
   justify-content:space-between;
   align-items:center;
   margin-bottom:18px;
 }
+
 .section-title h2{
   font-size:25px;
 }
+
 .muted{
   color:var(--muted);
   font-size:14px;
 }
+
 /* CATEGORIES */
+
 .category-grid{
   display:grid;
   grid-template-columns:repeat(8,1fr);
   gap:12px;
 }
+
 .category-card{
   background:#fff;
   border:1px solid var(--line);
@@ -246,18 +285,23 @@ header{
   text-align:center;
   transition:.2s;
 }
+
 .category-card:hover{
   transform:translateY(-3px);
   box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
+
 .category-icon{
   font-size:30px;
   margin-bottom:8px;
 }
+
 .category-card strong{
   font-size:13px;
 }
+
 /* PRODUCTS */
+
 .toolbar{
   background:#fff;
   border:1px solid var(--line);
@@ -269,27 +313,32 @@ header{
   margin-bottom:18px;
   gap:10px;
 }
+
 .filter-buttons{
   display:flex;
   gap:7px;
   overflow:auto;
 }
+
 .filter{
   padding:9px 14px;
   border-radius:20px;
   background:#f1f3f7;
   white-space:nowrap;
 }
+
 .filter.active,
 .filter:hover{
   background:#ffe9e3;
   color:var(--primary);
 }
+
 .product-grid{
   display:grid;
   grid-template-columns:repeat(5,1fr);
   gap:16px;
 }
+
 .product{
   background:#fff;
   border:1px solid var(--line);
@@ -298,10 +347,12 @@ header{
   transition:.2s;
   position:relative;
 }
+
 .product:hover{
   transform:translateY(-4px);
   box-shadow:0 12px 25px rgba(0,0,0,.09);
 }
+
 .product-img{
   height:175px;
   background:linear-gradient(135deg,#f2f5fb,#fff);
@@ -312,6 +363,7 @@ header{
   position:relative;
   overflow:hidden;
 }
+
 .product-img img{
   width:100%;
   height:100%;
@@ -320,6 +372,7 @@ header{
   display:block;
   background:#fff;
 }
+
 .product-fallback{
   position:absolute;
   inset:0;
@@ -329,6 +382,7 @@ header{
   font-size:72px;
   pointer-events:none;
 }
+
 .badge{
   position:absolute;
   top:10px;
@@ -339,10 +393,13 @@ header{
   border-radius:6px;
   font-size:11px;
   font-weight:bold;
+  z-index:2;
 }
+
 .product-info{
   padding:14px;
 }
+
 .product-title{
   font-size:15px;
   font-weight:bold;
@@ -350,6 +407,7 @@ header{
   height:40px;
   overflow:hidden;
 }
+
 .product-desc{
   font-size:12px;
   color:var(--muted);
@@ -357,15 +415,18 @@ header{
   height:30px;
   overflow:hidden;
 }
+
 .price{
   font-size:19px;
   font-weight:900;
 }
+
 .product-actions{
   display:flex;
   gap:7px;
   margin-top:12px;
 }
+
 .view-btn,
 .add-btn{
   flex:1;
@@ -373,20 +434,25 @@ header{
   border-radius:8px;
   font-weight:bold;
 }
+
 .view-btn{
   background:#fff0eb;
   color:var(--primary);
 }
+
 .add-btn{
   background:var(--primary);
   color:#fff;
 }
+
 /* TRUST */
+
 .trust{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:14px;
 }
+
 .trust-card{
   background:#fff;
   border:1px solid var(--line);
@@ -396,24 +462,30 @@ header{
   gap:12px;
   align-items:center;
 }
+
 .trust-icon{
   font-size:30px;
 }
+
 /* FOOTER */
+
 footer{
   background:#111827;
   color:#fff;
   margin-top:40px;
   padding:35px 5%;
 }
+
 .footer-grid{
   display:grid;
   grid-template-columns:2fr 1fr 1fr 1fr;
   gap:30px;
 }
+
 footer h3{
   margin-bottom:12px;
 }
+
 footer p,
 footer li{
   color:#aeb7c7;
@@ -422,6 +494,7 @@ footer li{
   list-style:none;
   cursor:pointer;
 }
+
 .whatsapp{
   display:inline-block;
   margin-top:12px;
@@ -431,6 +504,7 @@ footer li{
   border-radius:9px;
   font-weight:bold;
 }
+
 .copyright{
   border-top:1px solid #2a3447;
   margin-top:25px;
@@ -438,7 +512,9 @@ footer li{
   color:#8e98aa;
   font-size:13px;
 }
+
 /* MODAL */
+
 .modal{
   display:none;
   position:fixed;
@@ -449,9 +525,11 @@ footer li{
   justify-content:center;
   padding:15px;
 }
+
 .modal.show{
   display:flex;
 }
+
 .modal-box{
   background:#fff;
   border-radius:18px;
@@ -462,6 +540,7 @@ footer li{
   position:relative;
   padding:25px;
 }
+
 .close{
   position:absolute;
   right:18px;
@@ -470,12 +549,14 @@ footer li{
   color:#667085;
   cursor:pointer;
 }
+
 .modal-product{
   display:grid;
   grid-template-columns:180px 1fr;
   gap:22px;
   align-items:center;
 }
+
 .modal-img{
   height:180px;
   border-radius:14px;
@@ -484,19 +565,31 @@ footer li{
   align-items:center;
   justify-content:center;
   font-size:80px;
+  position:relative;
+  overflow:hidden;
 }
+
+.modal-img img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
 .modal h2{
   margin-bottom:8px;
 }
+
 .modal-price{
   font-size:25px;
   font-weight:900;
   color:var(--primary);
   margin:10px 0;
 }
+
 .form{
   margin-top:22px;
 }
+
 .form input,
 .form textarea{
   width:100%;
@@ -506,10 +599,12 @@ footer li{
   margin-bottom:11px;
   outline:none;
 }
+
 .form textarea{
   height:85px;
   resize:vertical;
 }
+
 .primary{
   width:100%;
   padding:13px;
@@ -518,7 +613,9 @@ footer li{
   border-radius:9px;
   font-weight:bold;
 }
+
 /* SEARCH */
+
 .suggestions{
   position:absolute;
   left:0;
@@ -532,9 +629,11 @@ footer li{
   z-index:2500;
   overflow:hidden;
 }
+
 .suggestions.show{
   display:block;
 }
+
 .suggestion{
   padding:12px 16px;
   display:flex;
@@ -542,9 +641,11 @@ footer li{
   cursor:pointer;
   border-bottom:1px solid #f0f1f4;
 }
+
 .suggestion:hover{
   background:#fff5f1;
 }
+
 .empty{
   grid-column:1/-1;
   background:#fff;
@@ -554,88 +655,117 @@ footer li{
   border-radius:14px;
   color:var(--muted);
 }
+
 /* RESPONSIVE */
+
 @media(max-width:1100px){
+
   .product-grid{
     grid-template-columns:repeat(4,1fr);
   }
+
   .category-grid{
     grid-template-columns:repeat(4,1fr);
   }
 }
+
 @media(max-width:800px){
+
   .header-main{
     flex-wrap:wrap;
   }
+
   .logo{
     width:100%;
   }
+
   .search-wrap{
     order:3;
     max-width:none;
     flex-basis:100%;
   }
+
   .hero{
     grid-template-columns:1fr;
   }
+
   .hero-art{
     display:none;
   }
+
   .hero-copy{
     padding:35px;
   }
+
   .hero h1{
     font-size:36px;
   }
+
   .product-grid{
     grid-template-columns:repeat(2,1fr);
   }
+
   .trust{
     grid-template-columns:repeat(2,1fr);
   }
+
   .footer-grid{
     grid-template-columns:1fr 1fr;
   }
 }
+
 @media(max-width:520px){
+
   .topbar{
     display:none;
   }
+
   .header-actions .action-btn:first-child{
     display:none;
   }
+
   .navbar{
     overflow:auto;
   }
+
   .nav-item{
     white-space:nowrap;
   }
+
   .category-grid{
     grid-template-columns:repeat(2,1fr);
   }
+
   .product-grid{
     grid-template-columns:1fr 1fr;
     gap:10px;
   }
+
   .product-img{
     height:135px;
     font-size:55px;
   }
+
   .product-title{
     font-size:13px;
   }
+
   .hero{
     margin:10px;
   }
+
   .section{
     padding:20px 10px;
   }
+
   .trust{
     grid-template-columns:1fr;
   }
+
   .footer-grid{
     grid-template-columns:1fr;
   }
+
   .modal-product{
     grid-template-columns:1fr;
   }
@@ -799,6 +929,7 @@ footer li{
 
 </section>
 
+
 <section class="section">
 
   <div class="section-title">
@@ -819,6 +950,7 @@ footer li{
   ></div>
 
 </section>
+
 
 <section
   class="section"
@@ -877,6 +1009,7 @@ footer li{
 
 </section>
 
+
 <section class="section">
 
   <div class="trust">
@@ -887,7 +1020,6 @@ footer li{
 
       <div>
         <b>Easy Delivery</b>
-
         <p class="muted">
           Simple order process
         </p>
@@ -895,13 +1027,13 @@ footer li{
 
     </div>
 
+
     <div class="trust-card">
 
       <span class="trust-icon">💬</span>
 
       <div>
         <b>WhatsApp Support</b>
-
         <p class="muted">
           Quick customer contact
         </p>
@@ -909,13 +1041,13 @@ footer li{
 
     </div>
 
+
     <div class="trust-card">
 
       <span class="trust-icon">🛍️</span>
 
       <div>
         <b>Many Categories</b>
-
         <p class="muted">
           Products for everyone
         </p>
@@ -923,13 +1055,13 @@ footer li{
 
     </div>
 
+
     <div class="trust-card">
 
       <span class="trust-icon">⭐</span>
 
       <div>
         <b>Great Choices</b>
-
         <p class="muted">
           Fresh products added
         </p>
@@ -942,6 +1074,7 @@ footer li{
 </section>
 
 </main>
+
 
 <footer>
 
@@ -967,6 +1100,7 @@ footer li{
       </a>
 
     </div>
+
 
     <div>
 
@@ -996,6 +1130,7 @@ footer li{
 
     </div>
 
+
     <div>
 
       <h3>
@@ -1019,6 +1154,7 @@ footer li{
       </ul>
 
     </div>
+
 
     <div>
 
@@ -1047,6 +1183,7 @@ footer li{
   </div>
 
 </footer>
+
 
 <!-- PRODUCT MODAL -->
 
@@ -1100,6 +1237,7 @@ footer li{
 
     </div>
 
+
     <form
       class="form"
       id="orderForm"
@@ -1152,6 +1290,7 @@ footer li{
 
 </div>
 
+
 <!-- CART -->
 
 <div
@@ -1189,6 +1328,7 @@ footer li{
 
 </div>
 
+
 <!-- INFO -->
 
 <div
@@ -1218,171 +1358,116 @@ footer li{
 
 </div>
 
+
 <script>
 
 const products = [
 
 ["Wireless Bluetooth Earbuds","Electronics","🎧",2499,"Clear sound wireless earbuds","images/JPG.1.PNG"],
-
 ["Smart Watch Series","Electronics","⌚",3999,"Modern smart watch"],
-
 ["Mini Portable Speaker","Electronics","🔊",1999,"Compact powerful speaker"],
-
 ["Fast Charging Power Bank","Electronics","🔋",2299,"Portable fast charging power bank"],
-
 ["Foldable Laptop Stand","Electronics","💻",1799,"Adjustable laptop stand"],
-
 ["USB LED Desk Lamp","Electronics","💡",1299,"Desk lamp with modern design"],
-
 ["Gaming Headphones","Electronics","🎮",2999,"Gaming style headphones"],
-
 ["Wireless Mouse","Electronics","🖱️",1199,"Smooth wireless mouse"],
-
 ["Keyboard & Mouse Combo","Electronics","⌨️",2199,"Keyboard and mouse set"],
-
 ["Phone Holder","Electronics","📱",699,"Universal mobile holder"],
 
 ["Classic Casual T-Shirt","Fashion","👕",1299,"Comfortable casual T-shirt"],
-
 ["Crossbody Shoulder Bag","Fashion","👜",1999,"Stylish everyday shoulder bag"],
-
 ["Sunglasses","Fashion","🕶️",999,"Trendy everyday sunglasses"],
-
 ["Minimal Wallet","Fashion","👛",799,"Compact modern wallet"],
-
 ["Casual Sneakers","Fashion","👟",2999,"Everyday casual sneakers"],
-
 ["Baseball Cap","Fashion","🧢",699,"Casual cap"],
-
 ["Travel Backpack","Fashion","🎒",2499,"Useful travel backpack"],
-
 ["Classic Belt","Fashion","👔",899,"Everyday belt"],
 
 ["Kitchen Storage Set","Home","🍱",1899,"Storage containers"],
-
 ["Aroma Humidifier","Home","🌫️",2999,"Room humidifier"],
-
 ["Non-Stick Kitchen Pan","Home","🍳",2499,"Everyday cooking pan"],
-
 ["Insulated Water Bottle","Home","🥤",1399,"Reusable insulated bottle"],
-
 ["LED Fairy Lights","Home","✨",999,"Decorative room lights"],
-
 ["Laundry Basket","Home","🧺",1499,"Home laundry basket"],
-
 ["Wall Clock","Home","🕐",1299,"Modern wall clock"],
-
 ["Cushion Set","Home","🛋️",1699,"Decorative cushion set"],
 
 ["Self-Care Kit","Beauty","🧴",1799,"Self-care collection"],
-
 ["Makeup Organizer","Beauty","💄",1499,"Makeup storage organizer"],
-
 ["Hair Styling Brush","Beauty","💇",1599,"Easy styling brush"],
-
 ["Travel Cosmetic Pouch","Beauty","👝",899,"Cosmetic travel pouch"],
-
-["Face Care Set","Beauty","🧖",2199,"Daily face care set"],
-
+["Face Care Set","Beauty","🧖",2199,"Daily care collection"],
 ["Perfume Gift Set","Beauty","🌸",2499,"Gift-style perfume set"],
 
 ["Rechargeable Mini Fan","Hot","🌀",1299,"Portable rechargeable fan"],
-
 ["Special Item","Hot","🔥",2199,"Popular special item"],
 
 ["Premium Product","New Arrival","⭐",2999,"Premium selected product"],
-
 ["Modern Collection","New Arrival","💎",3499,"Modern collection product"],
-
 ["New Arrival Product","New Arrival","🆕",2499,"Latest arrival"],
-
 ["Gift Box","New Arrival","🎁",1899,"Ready gift box"],
-
 ["Travel Essentials","New Arrival","✈️",1599,"Useful travel collection"],
 
 ["School Backpack","School","🎒",1999,"School and study backpack"],
-
 ["Notebook Set","School","📚",599,"Notebook collection"],
-
 ["Stationery Kit","School","✏️",799,"Stationery essentials"],
-
 ["Water Bottle","School","🥤",799,"Daily-use bottle"],
 
 ["Sports Bottle","Sports","🏃",999,"Sports water bottle"],
-
 ["Gym Gloves","Sports","🥊",1299,"Training gloves"],
-
 ["Football","Sports","⚽",1499,"Football for practice"],
-
 ["Sports Bag","Sports","🏋️",1999,"Sports carry bag"],
 
 ["Car Phone Holder","Automotive","🚗",999,"Car mobile holder"],
-
 ["Car Cleaning Kit","Automotive","🧽",1499,"Car cleaning essentials"],
-
 ["LED Car Light","Automotive","🚘",1299,"Decorative car light"],
 
 ["Kids Toy Car","Kids","🚙",1299,"Toy car"],
-
 ["Building Blocks","Kids","🧱",1599,"Creative building blocks"],
-
 ["Puzzle Game","Kids","🧩",899,"Fun puzzle game"],
 
 ["Pet Bowl","Pets","🐶",699,"Pet feeding bowl"],
-
 ["Pet Toy","Pets","🐾",599,"Pet play toy"],
 
 ["Mobile Accessories","Gadgets","📲",899,"Useful mobile accessories"],
-
 ["Smart LED Light","Gadgets","💡",1799,"Smart decorative light"],
-
 ["Mini Tripod","Gadgets","📸",999,"Compact phone tripod"]
 
 ];
 
+
 const categoryData=[
 
 ["All","🛍️"],
-
 ["Hot","🔥"],
-
 ["New Arrival","✨"],
-
 ["Electronics","📱"],
-
 ["Fashion","👕"],
-
 ["Home","🏠"],
-
 ["Beauty","💄"],
-
 ["School","📚"],
-
 ["Sports","⚽"],
-
 ["Automotive","🚗"],
-
 ["Kids","🧸"],
-
 ["Pets","🐾"],
-
 ["Gadgets","🔌"]
 
 ];
 
+
 let currentCategory="All";
-
 let currentProduct=null;
-
 let cart=[];
 
 const $=id=>document.getElementById(id);
+
 
 function money(n){
 
 return "Rs. "+n.toLocaleString("en-PK");
 
 }
+
 
 function renderCategories(){
 
@@ -1396,20 +1481,17 @@ onclick="setCategory('${c[0]}')"
 >
 
 <div class="category-icon">
-
 ${c[1]}
-
 </div>
 
 <strong>
-
 ${c[0]}
-
 </strong>
 
 </button>
 
 `).join("");
+
 
 $("filters").innerHTML=
 
@@ -1426,12 +1508,11 @@ ${c[0]}
 
 `).join("");
 
+
 $("categoryMenu").innerHTML=
 
 categoryData
-
 .filter(c=>c[0]!=="All")
-
 .map(c=>`
 
 <button
@@ -1446,6 +1527,7 @@ ${c[1]} ${c[0]}
 
 }
 
+
 function renderProducts(list=products){
 
 let search=$("searchInput").value.toLowerCase().trim();
@@ -1453,46 +1535,38 @@ let search=$("searchInput").value.toLowerCase().trim();
 let filtered=list.filter(p=>{
 
 let matchesCategory=
-
 currentCategory==="All" ||
-
 p[1]===currentCategory;
 
 let hay=
-
 (p[0]+" "+p[1]+" "+p[4]).toLowerCase();
 
 let matchesSearch=
-
 !search ||
-
 hay.includes(search) ||
-
 search.split(" ")
-
 .some(w=>w.length>2 && hay.includes(w));
 
 return matchesCategory && matchesSearch;
 
 });
 
+
 const sort=$("sortSelect").value;
 
 if(sort==="low")
-
 filtered.sort((a,b)=>a[3]-b[3]);
 
 if(sort==="high")
-
 filtered.sort((a,b)=>b[3]-a[3]);
 
 if(sort==="az")
-
 filtered.sort((a,b)=>a[0].localeCompare(b[0]));
 
-$("resultText").textContent=
 
+$("resultText").textContent=
 filtered.length+" products found";
+
 
 if(!filtered.length){
 
@@ -1501,24 +1575,17 @@ $("productGrid").innerHTML=`
 <div class="empty">
 
 <div style="font-size:50px">
-
 🔎
-
 </div>
 
 <h3 style="margin:10px">
-
 No exact result found
-
 </h3>
 
 <p>
-
 Try another keyword or choose a category.
-
 You can search words like phone, bag, light,
 kitchen, toy, sports, beauty, etc.
-
 </p>
 
 <br>
@@ -1527,9 +1594,7 @@ kitchen, toy, sports, beauty, etc.
 class="filter active"
 onclick="clearSearch()"
 >
-
 Show All Products
-
 </button>
 
 </div>
@@ -1539,6 +1604,7 @@ Show All Products
 return;
 
 }
+
 
 $("productGrid").innerHTML=
 
@@ -1551,37 +1617,40 @@ return `
 <article class="product">
 
 <span class="badge">
-
 ${p[1]}
-
 </span>
 
 <div class="product-img">
 
-${p[5] ? `<img src="${p[5]}" alt="${p[0]}" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">` : ``}
+${p[5]
+?
+`<img
+src="${p[5]}"
+alt="${p[0]}"
+onload="this.nextElementSibling.style.display='none'"
+onerror="this.style.display='none'"
+>`
+:
+``}
 
-<span class="product-fallback">${p[2]}</span>
+<span class="product-fallback">
+${p[2]}
+</span>
 
 </div>
 
 <div class="product-info">
 
 <div class="product-title">
-
 ${p[0]}
-
 </div>
 
 <div class="product-desc">
-
 ${p[4]}
-
 </div>
 
 <div class="price">
-
 ${money(p[3])}
-
 </div>
 
 <div class="product-actions">
@@ -1590,18 +1659,14 @@ ${money(p[3])}
 class="view-btn"
 onclick="openProduct(${index})"
 >
-
 View
-
 </button>
 
 <button
 class="add-btn"
 onclick="addToCart(${index})"
 >
-
 Add
-
 </button>
 
 </div>
@@ -1616,22 +1681,18 @@ Add
 
 }
 
+
 function setCategory(category){
 
 currentCategory=category;
 
 document
-
 .querySelectorAll(".filter")
-
 .forEach(b=>{
 
 b.classList.toggle(
-
 "active",
-
 b.textContent.trim()===category
-
 );
 
 });
@@ -1639,54 +1700,46 @@ b.textContent.trim()===category
 renderProducts();
 
 $("products").scrollIntoView({
-
 behavior:"smooth"
-
 });
 
 }
 
+
 function clearSearch(){
 
 $("searchInput").value="";
-
 currentCategory="All";
 
 renderProducts();
 
 }
 
+
 function showSuggestions(){
 
 let q=
-
 $("searchInput").value
-
 .toLowerCase()
-
 .trim();
 
 if(!q){
 
 $("suggestions")
-
 .classList.remove("show");
 
 return;
 
 }
 
+
 let matches=
-
 products.filter(p=>
-
 (p[0]+" "+p[1]+" "+p[4])
-
 .toLowerCase()
-
 .includes(q)
-
 ).slice(0,7);
+
 
 if(!matches.length){
 
@@ -1695,15 +1748,11 @@ $("suggestions").innerHTML=`
 <div class="suggestion">
 
 <span>
-
 🔎 Search all products
-
 </span>
 
 <span>
-
 →
-
 </span>
 
 </div>
@@ -1718,19 +1767,15 @@ matches.map(p=>`
 
 <div
 class="suggestion"
-onclick="chooseSuggestion('${p[0].replace(/'/g,"\\'")}')"
+onclick="chooseSuggestion('${p[0].replace(/'/g,"\\'")}' )"
 >
 
 <span>
-
 ${p[2]} ${p[0]}
-
 </span>
 
 <span>
-
 ${money(p[3])}
-
 </span>
 
 </div>
@@ -1739,18 +1784,18 @@ ${money(p[3])}
 
 }
 
-$("suggestions")
 
+$("suggestions")
 .classList.add("show");
 
 }
+
 
 function chooseSuggestion(name){
 
 $("searchInput").value=name;
 
 $("suggestions")
-
 .classList.remove("show");
 
 currentCategory="All";
@@ -1758,17 +1803,15 @@ currentCategory="All";
 renderProducts();
 
 $("products").scrollIntoView({
-
 behavior:"smooth"
-
 });
 
 }
+
 
 function doSearch(){
 
 $("suggestions")
-
 .classList.remove("show");
 
 currentCategory="All";
@@ -1776,122 +1819,116 @@ currentCategory="All";
 renderProducts();
 
 $("products").scrollIntoView({
-
 behavior:"smooth"
-
 });
 
 }
 
+
 $("searchInput")
-
 .addEventListener(
-
 "input",
-
 showSuggestions
-
 );
 
+
 $("searchInput")
-
 .addEventListener(
-
 "keydown",
-
 e=>{
 
 if(e.key==="Enter")
-
 doSearch();
 
 });
 
+
 $("searchBtn").onclick=doSearch;
 
-$("sortSelect").onchange=
 
+$("sortSelect").onchange=
 ()=>renderProducts();
 
+
 document.addEventListener(
-
 "click",
-
 e=>{
 
 if(!e.target.closest(".search-wrap")){
 
 $("suggestions")
-
 .classList.remove("show");
 
 }
 
 });
 
+
 function openProduct(index){
 
 currentProduct=
-
 products[index];
+
 
 if(currentProduct[5]){
 
-  $("modalImg").innerHTML=`
+$("modalImg").innerHTML=`
 
-<img src="${currentProduct[5]}" alt="${currentProduct[0]}" onerror="this.style.display='none'">
+<img
+src="${currentProduct[5]}"
+alt="${currentProduct[0]}"
+onerror="this.style.display='none'"
+>
 
-<span class="product-fallback">${currentProduct[2]}</span>
+<span class="product-fallback">
+${currentProduct[2]}
+</span>
 
 `;
 
 }else{
 
-  $("modalImg").textContent=currentProduct[2];
+$("modalImg").textContent=
+currentProduct[2];
 
 }
 
-$("modalTitle").textContent=
 
+$("modalTitle").textContent=
 currentProduct[0];
 
 $("modalPrice").textContent=
-
 money(currentProduct[3]);
 
 $("modalDesc").textContent=
-
 currentProduct[4]+
-
 " • Category: "+
-
 currentProduct[1];
 
 $("orderForm").style.display=
-
 "none";
 
 $("productModal")
-
 .classList.add("show");
 
 }
 
+
 function showOrderForm(){
 
 $("orderForm")
-
 .style.display="block";
 
 }
 
+
 function closeModal(id){
 
 $(id)
-
 .classList.remove("show");
 
 }
+
 
 $("orderForm").onsubmit=e=>{
 
@@ -1908,10 +1945,10 @@ Phone: ${$("customerPhone").value}
 Address: ${$("customerAddress").value}
 Note: ${$("notes").value}`;
 
+
 window.open(
 
 "https://wa.me/923312913732?text="+
-
 encodeURIComponent(message),
 
 "_blank"
@@ -1920,15 +1957,16 @@ encodeURIComponent(message),
 
 };
 
+
 function addToCart(index){
 
 cart.push(index);
 
 $("cartCount").textContent=
-
 cart.length;
 
 }
+
 
 function openCart(){
 
@@ -1939,21 +1977,15 @@ $("cartItems").innerHTML=`
 <div class="empty">
 
 <div style="font-size:45px">
-
 🛒
-
 </div>
 
 <h3>
-
 Your cart is empty
-
 </h3>
 
 <p>
-
 Add products to your cart first.
-
 </p>
 
 </div>
@@ -1995,20 +2027,19 @@ ${money(products[index][3])}
 
 }
 
-$("cartModal")
 
+$("cartModal")
 .classList.add("show");
 
 }
 
+
 function checkoutCart(){
 
 if(!cart.length)
-
 return;
 
 let text=
-
 "New Cart Order\n\n";
 
 let total=0;
@@ -2016,7 +2047,6 @@ let total=0;
 cart.forEach((index,i)=>{
 
 text+=
-
 `${i+1}. ${products[index][0]} - ${money(products[index][3])}\n`;
 
 total+=products[index][3];
@@ -2024,13 +2054,12 @@ total+=products[index][3];
 });
 
 text+=
-
 `\nTotal: ${money(total)}`;
+
 
 window.open(
 
 "https://wa.me/923312913732?text="+
-
 encodeURIComponent(text),
 
 "_blank"
@@ -2039,29 +2068,26 @@ encodeURIComponent(text),
 
 }
 
+
 function showOrders(){
 
 $("infoTitle").textContent=
-
 "📦 Orders";
 
 $("infoText").textContent=
-
 "Orders are sent directly to our WhatsApp. After you submit an order, WhatsApp will open with your order details.";
 
 $("infoModal")
-
 .classList.add("show");
 
 }
 
-renderCategories();
 
+renderCategories();
 renderProducts();
 
 </script>
 
 </body>
 </html>
-
 
